@@ -3,16 +3,35 @@
 html
   min-height 100%
   position relative
+  // background-color body_background_color
 
-body
+html body
   margin-bottom 60px
+  background-color body_background_color
+  // background-color transparent
 
 .navbar.navbar-default
   background-color menu_background_color
   color menu_button_color
 
 .navbar.navbar-default a, .navbar.navbar-default .navbar-nav > li > a
-  color menu_button_color
+  font-family 'Bitter', serif
+  margin-top 12px
+
+.navbar > .container .navbar-brand  
+  color #F09D30
+  font-family 'Oswald', sans-serif
+  font-weight 800
+  line-height 46px
+  font-size 40px
+  margin 0 0 23px 0
+  letter-spacing 2px
+
+.navbar-nav > li > a
+  font-size 14px
+
+.navbar-default .navbar-nav > .active > a
+  font-size 20px
 
 footer
   position absolute
@@ -25,7 +44,8 @@ footer a
   color menu_link_color
 
 body > .container
-  padding 80px 15px 70px
+  padding 100px 15px 70px
+
 
 .container .text-muted
   margin 20px 0
